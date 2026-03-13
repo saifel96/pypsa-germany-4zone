@@ -1,0 +1,143 @@
+digraph EnergyModel {
+
+    rankdir=TB;
+    graph [fontname="Helvetica", splines=ortho, nodesep=0.5, ranksep=0.7];
+    node  [fontname="Helvetica", shape=box, style="rounded,filled", fontsize=11];
+    edge  [fontname="Helvetica", fontsize=9, color="#666666"];
+
+    /* ---------------- DATA LAYER ---------------- */
+
+    subgraph cluster_data {
+        label="Data Layer";
+        style=dashed; color="#888888";
+
+        node [fillcolor="#E1F5EE", color="#0F6E56"];
+
+        Weather [label="Weather Data\nERA5 / atlite"];
+        Load    [label="Electricity Demand\nENTSO-E"];
+        Costs   [label="Technology Costs\nCapEx / OpEx"];
+        CO2     [label="CO₂ Policy\nEmission Limit"];
+    }
+
+    /* ---------------- PREPROCESSING ---------------- */
+
+    subgraph cluster_preprocessing {
+        label="Preprocessing";
+        style=dashed; color="#888888";
+
+        node [fillcolor="#EEEDFE", color="#534AB7"];
+
+        CF     [label="Capacity Factors\nWind / Solar"];
+        Demand [label="Regional Demand\nNord · West · Ost · Süd"];
+    }
+
+    /* ---------------- MODEL ---------------- */
+
+    subgraph cluster_model {
+
+        label="PyPSA Energy System Model";
+        style=dashed; color="#888888";
+
+        /* GENERATION */
+
+        subgraph cluster_gen {
+            label="Renewable Generation";
+            style=filled; fillcolor="#EAF3DE"; color="#3B6D11";
+
+            node [fillcolor="#C0DD97", color="#3B6D11"];
+
+            Wind  [label="Wind"];
+            Solar [label="Solar PV"];
+        }
+
+        /* BACKUP */
+
+        subgraph cluster_backup {
+            label="Backup Generation";
+            style=filled; fillcolor="#FAECE7"; color="#993C1D";
+
+            node [fillcolor="#F5C4B3", color="#993C1D"];
+
+            OCGT [label="Gas (OCGT)"];
+        }
+
+        /* STORAGE */
+
+        subgraph cluster_storage {
+            label="Energy Storage";
+            style=filled; fillcolor="#E6F1FB"; color="#185FA5";
+
+            node [fillcolor="#B5D4F4", color="#185FA5"];
+
+            Battery  [label="Battery Storage\n4h"];
+            Hydrogen [label="Hydrogen Storage\n168h"];
+        }
+
+        /* NETWORK */
+
+        node [fillcolor="#D3D1C7", color="#5F5E5A"];
+
+        Network [label="Transmission Network\n380 kV Lines\nNord – West – Ost – Süd"];
+    }
+
+    /* ---------------- OPTIMIZATION ---------------- */
+
+    subgraph cluster_opt {
+
+        label="Optimization";
+        style=dashed; color="#888888";
+
+        node [fillcolor="#FFF1CC", color="#9C6B00"];
+
+        Optimizer [label="Linear Optimization\nCost Minimization\n(PyPSA + HiGHS)"];
+    }
+
+    /* ---------------- RESULTS ---------------- */
+
+    subgraph cluster_results {
+
+        label="Model Outputs";
+        style=dashed; color="#888888";
+
+        node [fillcolor="#FAEEDA", color="#854F0B"];
+
+        Capacity   [label="Optimal Capacity\n(GW)"];
+        Generation [label="Energy Balance\n(TWh)"];
+        Flows      [label="Transmission Flows\n(MW)"];
+        Cost       [label="System Cost\n(bn€/a)"];
+        Emissions  [label="CO₂ Emissions\n(Mt/a)"];
+    }
+
+    /* ---------------- FLOW ---------------- */
+
+    Weather -> CF;
+    Load    -> Demand;
+
+    CF     -> Wind;
+    CF     -> Solar;
+
+    Costs  -> Wind;
+    Costs  -> Solar;
+    Costs  -> OCGT;
+    Costs  -> Battery;
+    Costs  -> Hydrogen;
+
+    CO2 -> Optimizer [label="constraint"];
+
+    Demand -> Network;
+
+    Wind -> Network;
+    Solar -> Network;
+    OCGT -> Network;
+
+    Battery -> Network;
+    Hydrogen -> Network;
+
+    Network -> Optimizer;
+
+    Optimizer -> Capacity;
+    Optimizer -> Generation;
+    Optimizer -> Flows;
+    Optimizer -> Cost;
+    Optimizer -> Emissions;
+}

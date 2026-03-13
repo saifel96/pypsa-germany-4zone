@@ -1,0 +1,258 @@
+<svg width="821pt" height="735pt" viewBox="0.00 0.00 821.00 735.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 731.2)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-731.2 817,-731.2 817,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_data</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="73,-636.8 73,-719.2 805,-719.2 805,-636.8 73,-636.8"/>
+<text xml:space="preserve" text-anchor="middle" x="439" y="-702.6" font-family="Times,serif" font-size="14.00">Data Layer</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_pre</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="105,-546.4 105,-628.8 324,-628.8 324,-546.4 105,-546.4"/>
+<text xml:space="preserve" text-anchor="middle" x="214.5" y="-612.2" font-family="Times,serif" font-size="14.00">Preprocessing</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_model</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="281,-405.6 281,-538.4 475,-538.4 475,-405.6 281,-405.6"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-521.8" font-family="Times,serif" font-size="14.00">Energy System Model (PyPSA)</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_opt</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="290,-237.6 290,-397.6 466,-397.6 466,-237.6 290,-237.6"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-381" font-family="Times,serif" font-size="14.00">Optimization Layer</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_out</title>
+<polygon fill="none" stroke="black" stroke-dasharray="5,2" points="8,-147.2 8,-229.6 695,-229.6 695,-147.2 8,-147.2"/>
+<text xml:space="preserve" text-anchor="middle" x="351.5" y="-213" font-family="Times,serif" font-size="14.00">Model Outputs</text>
+</g>
+<!-- Weather -->
+<g id="node1" class="node">
+<title>Weather</title>
+<path fill="none" stroke="black" d="M172.55,-686.4C172.55,-686.4 93.45,-686.4 93.45,-686.4 87.45,-686.4 81.45,-680.4 81.45,-674.4 81.45,-674.4 81.45,-656.8 81.45,-656.8 81.45,-650.8 87.45,-644.8 93.45,-644.8 93.45,-644.8 172.55,-644.8 172.55,-644.8 178.55,-644.8 184.55,-650.8 184.55,-656.8 184.55,-656.8 184.55,-674.4 184.55,-674.4 184.55,-680.4 178.55,-686.4 172.55,-686.4"/>
+<text xml:space="preserve" text-anchor="middle" x="133" y="-669.8" font-family="Times,serif" font-size="14.00">Weather Data</text>
+<text xml:space="preserve" text-anchor="middle" x="133" y="-653" font-family="Times,serif" font-size="14.00">(Atlite / ERA5)</text>
+</g>
+<!-- CF -->
+<g id="node6" class="node">
+<title>CF</title>
+<path fill="none" stroke="black" d="M211.24,-596C211.24,-596 124.76,-596 124.76,-596 118.76,-596 112.76,-590 112.76,-584 112.76,-584 112.76,-566.4 112.76,-566.4 112.76,-560.4 118.76,-554.4 124.76,-554.4 124.76,-554.4 211.24,-554.4 211.24,-554.4 217.24,-554.4 223.24,-560.4 223.24,-566.4 223.24,-566.4 223.24,-584 223.24,-584 223.24,-590 217.24,-596 211.24,-596"/>
+<text xml:space="preserve" text-anchor="middle" x="168" y="-579.4" font-family="Times,serif" font-size="14.00">Wind/Solar</text>
+<text xml:space="preserve" text-anchor="middle" x="168" y="-562.6" font-family="Times,serif" font-size="14.00">Capacity Factors</text>
+</g>
+<!-- Weather&#45;&gt;CF -->
+<g id="edge1" class="edge">
+<title>Weather-&gt;CF</title>
+<path fill="none" stroke="black" d="M140.94,-644.54C145.34,-633.43 150.9,-619.38 155.84,-606.92"/>
+<polygon fill="black" stroke="black" points="158.98,-608.48 159.41,-597.89 152.48,-605.9 158.98,-608.48"/>
+</g>
+<!-- LoadData -->
+<g id="node2" class="node">
+<title>LoadData</title>
+<path fill="none" stroke="black" d="M273.82,-686.4C273.82,-686.4 214.18,-686.4 214.18,-686.4 208.18,-686.4 202.18,-680.4 202.18,-674.4 202.18,-674.4 202.18,-656.8 202.18,-656.8 202.18,-650.8 208.18,-644.8 214.18,-644.8 214.18,-644.8 273.82,-644.8 273.82,-644.8 279.82,-644.8 285.82,-650.8 285.82,-656.8 285.82,-656.8 285.82,-674.4 285.82,-674.4 285.82,-680.4 279.82,-686.4 273.82,-686.4"/>
+<text xml:space="preserve" text-anchor="middle" x="244" y="-669.8" font-family="Times,serif" font-size="14.00">Load Data</text>
+<text xml:space="preserve" text-anchor="middle" x="244" y="-653" font-family="Times,serif" font-size="14.00">(ENTSO-E)</text>
+</g>
+<!-- RegionalLoad -->
+<g id="node7" class="node">
+<title>RegionalLoad</title>
+<path fill="none" stroke="black" d="M304.36,-596C304.36,-596 253.64,-596 253.64,-596 247.64,-596 241.64,-590 241.64,-584 241.64,-584 241.64,-566.4 241.64,-566.4 241.64,-560.4 247.64,-554.4 253.64,-554.4 253.64,-554.4 304.36,-554.4 304.36,-554.4 310.36,-554.4 316.36,-560.4 316.36,-566.4 316.36,-566.4 316.36,-584 316.36,-584 316.36,-590 310.36,-596 304.36,-596"/>
+<text xml:space="preserve" text-anchor="middle" x="279" y="-579.4" font-family="Times,serif" font-size="14.00">4-Zone</text>
+<text xml:space="preserve" text-anchor="middle" x="279" y="-562.6" font-family="Times,serif" font-size="14.00">Load Split</text>
+</g>
+<!-- LoadData&#45;&gt;RegionalLoad -->
+<g id="edge2" class="edge">
+<title>LoadData-&gt;RegionalLoad</title>
+<path fill="none" stroke="black" d="M251.94,-644.54C256.34,-633.43 261.9,-619.38 266.84,-606.92"/>
+<polygon fill="black" stroke="black" points="269.98,-608.48 270.41,-597.89 263.48,-605.9 269.98,-608.48"/>
+</g>
+<!-- Costs -->
+<g id="node3" class="node">
+<title>Costs</title>
+<path fill="none" stroke="black" d="M440.5,-686.4C440.5,-686.4 315.5,-686.4 315.5,-686.4 309.5,-686.4 303.5,-680.4 303.5,-674.4 303.5,-674.4 303.5,-656.8 303.5,-656.8 303.5,-650.8 309.5,-644.8 315.5,-644.8 315.5,-644.8 440.5,-644.8 440.5,-644.8 446.5,-644.8 452.5,-650.8 452.5,-656.8 452.5,-656.8 452.5,-674.4 452.5,-674.4 452.5,-680.4 446.5,-686.4 440.5,-686.4"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-669.8" font-family="Times,serif" font-size="14.00">Technology Costs 2035</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-653" font-family="Times,serif" font-size="14.00">(CapEx / OpEx)</text>
+</g>
+<!-- PyPSA -->
+<g id="node8" class="node">
+<title>PyPSA</title>
+<path fill="none" stroke="black" d="M420.46,-505.6C420.46,-505.6 335.54,-505.6 335.54,-505.6 329.54,-505.6 323.54,-499.6 323.54,-493.6 323.54,-493.6 323.54,-425.6 323.54,-425.6 323.54,-419.6 329.54,-413.6 335.54,-413.6 335.54,-413.6 420.46,-413.6 420.46,-413.6 426.46,-413.6 432.46,-419.6 432.46,-425.6 432.46,-425.6 432.46,-493.6 432.46,-493.6 432.46,-499.6 426.46,-505.6 420.46,-505.6"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-489" font-family="Times,serif" font-size="14.00">4-Zone Network</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-472.2" font-family="Times,serif" font-size="14.00">Buses</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-455.4" font-family="Times,serif" font-size="14.00">Generators</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-438.6" font-family="Times,serif" font-size="14.00">Links</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-421.8" font-family="Times,serif" font-size="14.00">Storage</text>
+</g>
+<!-- Costs&#45;&gt;PyPSA -->
+<g id="edge5" class="edge">
+<title>Costs-&gt;PyPSA</title>
+<path fill="none" stroke="black" d="M378,-644.67C378,-615.37 378,-559.56 378,-517.04"/>
+<polygon fill="black" stroke="black" points="381.5,-517.23 378,-507.23 374.5,-517.23 381.5,-517.23"/>
+</g>
+<!-- CO2 -->
+<g id="node4" class="node">
+<title>CO2</title>
+<path fill="none" stroke="black" d="M617.18,-683.6C617.18,-683.6 482.82,-683.6 482.82,-683.6 476.82,-683.6 470.82,-677.6 470.82,-671.6 470.82,-671.6 470.82,-659.6 470.82,-659.6 470.82,-653.6 476.82,-647.6 482.82,-647.6 482.82,-647.6 617.18,-647.6 617.18,-647.6 623.18,-647.6 629.18,-653.6 629.18,-659.6 629.18,-659.6 629.18,-671.6 629.18,-671.6 629.18,-677.6 623.18,-683.6 617.18,-683.6"/>
+<text xml:space="preserve" text-anchor="middle" x="550" y="-661.4" font-family="Times,serif" font-size="14.00">CO2 Policy Assumptions</text>
+</g>
+<!-- CO2&#45;&gt;PyPSA -->
+<g id="edge6" class="edge">
+<title>CO2-&gt;PyPSA</title>
+<path fill="none" stroke="black" d="M535.34,-647.21C510.81,-618.12 460.51,-558.46 423.36,-514.4"/>
+<polygon fill="black" stroke="black" points="426.21,-512.35 417.09,-506.96 420.86,-516.86 426.21,-512.35"/>
+</g>
+<!-- EVInput -->
+<g id="node5" class="node">
+<title>EVInput</title>
+<path fill="none" stroke="black" d="M784.88,-686.4C784.88,-686.4 659.12,-686.4 659.12,-686.4 653.12,-686.4 647.12,-680.4 647.12,-674.4 647.12,-674.4 647.12,-656.8 647.12,-656.8 647.12,-650.8 653.12,-644.8 659.12,-644.8 659.12,-644.8 784.88,-644.8 784.88,-644.8 790.88,-644.8 796.88,-650.8 796.88,-656.8 796.88,-656.8 796.88,-674.4 796.88,-674.4 796.88,-680.4 790.88,-686.4 784.88,-686.4"/>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-669.8" font-family="Times,serif" font-size="14.00">EV Scenarios</text>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-653" font-family="Times,serif" font-size="14.00">(Passive / Smart / V2G)</text>
+</g>
+<!-- EVInput&#45;&gt;PyPSA -->
+<g id="edge7" class="edge">
+<title>EVInput-&gt;PyPSA</title>
+<path fill="none" stroke="black" d="M688.07,-644.48C631.05,-610.67 515.11,-541.91 442.28,-498.72"/>
+<polygon fill="black" stroke="black" points="444.43,-495.93 434.04,-493.84 440.86,-501.95 444.43,-495.93"/>
+</g>
+<!-- CF&#45;&gt;PyPSA -->
+<g id="edge3" class="edge">
+<title>CF-&gt;PyPSA</title>
+<path fill="none" stroke="black" d="M205.06,-554.15C234.98,-537.97 277.8,-514.8 313.35,-495.57"/>
+<polygon fill="black" stroke="black" points="314.7,-498.82 321.83,-490.99 311.37,-492.66 314.7,-498.82"/>
+</g>
+<!-- RegionalLoad&#45;&gt;PyPSA -->
+<g id="edge4" class="edge">
+<title>RegionalLoad-&gt;PyPSA</title>
+<path fill="none" stroke="black" d="M296.47,-554.15C306.22,-542.97 318.86,-528.46 331.28,-514.22"/>
+<polygon fill="black" stroke="black" points="333.61,-516.87 337.54,-507.03 328.33,-512.27 333.61,-516.87"/>
+</g>
+<!-- Linopy -->
+<g id="node9" class="node">
+<title>Linopy</title>
+<path fill="none" stroke="black" d="M446.32,-364.8C446.32,-364.8 309.68,-364.8 309.68,-364.8 303.68,-364.8 297.68,-358.8 297.68,-352.8 297.68,-352.8 297.68,-335.2 297.68,-335.2 297.68,-329.2 303.68,-323.2 309.68,-323.2 309.68,-323.2 446.32,-323.2 446.32,-323.2 452.32,-323.2 458.32,-329.2 458.32,-335.2 458.32,-335.2 458.32,-352.8 458.32,-352.8 458.32,-358.8 452.32,-364.8 446.32,-364.8"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-348.2" font-family="Times,serif" font-size="14.00">Linopy Model</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-331.4" font-family="Times,serif" font-size="14.00">(Variables &amp; Constraints)</text>
+</g>
+<!-- PyPSA&#45;&gt;Linopy -->
+<g id="edge8" class="edge">
+<title>PyPSA-&gt;Linopy</title>
+<path fill="none" stroke="black" d="M378,-413.38C378,-400.98 378,-387.81 378,-376.37"/>
+<polygon fill="black" stroke="black" points="381.5,-376.7 378,-366.7 374.5,-376.7 381.5,-376.7"/>
+</g>
+<!-- Solver -->
+<g id="node10" class="node">
+<title>Solver</title>
+<path fill="none" stroke="black" d="M444.39,-287.2C444.39,-287.2 311.61,-287.2 311.61,-287.2 305.61,-287.2 299.61,-281.2 299.61,-275.2 299.61,-275.2 299.61,-257.6 299.61,-257.6 299.61,-251.6 305.61,-245.6 311.61,-245.6 311.61,-245.6 444.39,-245.6 444.39,-245.6 450.39,-245.6 456.39,-251.6 456.39,-257.6 456.39,-257.6 456.39,-275.2 456.39,-275.2 456.39,-281.2 450.39,-287.2 444.39,-287.2"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-270.6" font-family="Times,serif" font-size="14.00">Solver</text>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-253.8" font-family="Times,serif" font-size="14.00">(HiGHS / Gurobi / CBC)</text>
+</g>
+<!-- Linopy&#45;&gt;Solver -->
+<g id="edge9" class="edge">
+<title>Linopy-&gt;Solver</title>
+<path fill="none" stroke="black" d="M378,-322.74C378,-315.39 378,-306.91 378,-298.83"/>
+<polygon fill="black" stroke="black" points="381.5,-298.97 378,-288.97 374.5,-298.97 381.5,-298.97"/>
+</g>
+<!-- Capacity -->
+<g id="node11" class="node">
+<title>Capacity</title>
+<path fill="none" stroke="black" d="M121.73,-196.8C121.73,-196.8 28.27,-196.8 28.27,-196.8 22.27,-196.8 16.27,-190.8 16.27,-184.8 16.27,-184.8 16.27,-167.2 16.27,-167.2 16.27,-161.2 22.27,-155.2 28.27,-155.2 28.27,-155.2 121.73,-155.2 121.73,-155.2 127.73,-155.2 133.73,-161.2 133.73,-167.2 133.73,-167.2 133.73,-184.8 133.73,-184.8 133.73,-190.8 127.73,-196.8 121.73,-196.8"/>
+<text xml:space="preserve" text-anchor="middle" x="75" y="-180.2" font-family="Times,serif" font-size="14.00">Installed Capacity</text>
+<text xml:space="preserve" text-anchor="middle" x="75" y="-163.4" font-family="Times,serif" font-size="14.00">(p_nom_opt)</text>
+</g>
+<!-- Solver&#45;&gt;Capacity -->
+<g id="edge10" class="edge">
+<title>Solver-&gt;Capacity</title>
+<path fill="none" stroke="black" d="M299.36,-263.3C252.37,-259.66 192.41,-250.77 143,-229.6 128.93,-223.57 115.21,-213.93 103.83,-204.54"/>
+<polygon fill="black" stroke="black" points="106.25,-202 96.39,-198.12 101.68,-207.3 106.25,-202"/>
+</g>
+<!-- Transmission -->
+<g id="node12" class="node">
+<title>Transmission</title>
+<path fill="none" stroke="black" d="M294.02,-196.8C294.02,-196.8 163.98,-196.8 163.98,-196.8 157.98,-196.8 151.98,-190.8 151.98,-184.8 151.98,-184.8 151.98,-167.2 151.98,-167.2 151.98,-161.2 157.98,-155.2 163.98,-155.2 163.98,-155.2 294.02,-155.2 294.02,-155.2 300.02,-155.2 306.02,-161.2 306.02,-167.2 306.02,-167.2 306.02,-184.8 306.02,-184.8 306.02,-190.8 300.02,-196.8 294.02,-196.8"/>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-180.2" font-family="Times,serif" font-size="14.00">Transmission Expansion</text>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-163.4" font-family="Times,serif" font-size="14.00">(s_nom_opt)</text>
+</g>
+<!-- Solver&#45;&gt;Transmission -->
+<g id="edge11" class="edge">
+<title>Solver-&gt;Transmission</title>
+<path fill="none" stroke="black" d="M341.9,-245.15C333.07,-240.13 323.67,-234.71 315,-229.6 300.69,-221.16 285.16,-211.74 271.29,-203.24"/>
+<polygon fill="black" stroke="black" points="273.16,-200.28 262.81,-198.02 269.49,-206.24 273.16,-200.28"/>
+</g>
+<!-- Dispatch -->
+<g id="node13" class="node">
+<title>Dispatch</title>
+<path fill="none" stroke="black" d="M420.46,-194C420.46,-194 335.54,-194 335.54,-194 329.54,-194 323.54,-188 323.54,-182 323.54,-182 323.54,-170 323.54,-170 323.54,-164 329.54,-158 335.54,-158 335.54,-158 420.46,-158 420.46,-158 426.46,-158 432.46,-164 432.46,-170 432.46,-170 432.46,-182 432.46,-182 432.46,-188 426.46,-194 420.46,-194"/>
+<text xml:space="preserve" text-anchor="middle" x="378" y="-171.8" font-family="Times,serif" font-size="14.00">Hourly Dispatch</text>
+</g>
+<!-- Solver&#45;&gt;Dispatch -->
+<g id="edge12" class="edge">
+<title>Solver-&gt;Dispatch</title>
+<path fill="none" stroke="black" d="M378,-245.34C378,-233.56 378,-218.48 378,-205.49"/>
+<polygon fill="black" stroke="black" points="381.5,-205.81 378,-195.81 374.5,-205.81 381.5,-205.81"/>
+</g>
+<!-- Prices -->
+<g id="node14" class="node">
+<title>Prices</title>
+<path fill="none" stroke="black" d="M537.41,-196.8C537.41,-196.8 462.59,-196.8 462.59,-196.8 456.59,-196.8 450.59,-190.8 450.59,-184.8 450.59,-184.8 450.59,-167.2 450.59,-167.2 450.59,-161.2 456.59,-155.2 462.59,-155.2 462.59,-155.2 537.41,-155.2 537.41,-155.2 543.41,-155.2 549.41,-161.2 549.41,-167.2 549.41,-167.2 549.41,-184.8 549.41,-184.8 549.41,-190.8 543.41,-196.8 537.41,-196.8"/>
+<text xml:space="preserve" text-anchor="middle" x="500" y="-180.2" font-family="Times,serif" font-size="14.00">Shadow Prices</text>
+<text xml:space="preserve" text-anchor="middle" x="500" y="-163.4" font-family="Times,serif" font-size="14.00">(LMPs)</text>
+</g>
+<!-- Solver&#45;&gt;Prices -->
+<g id="edge13" class="edge">
+<title>Solver-&gt;Prices</title>
+<path fill="none" stroke="black" d="M416.45,-245.27C424.75,-240.45 433.33,-235.1 441,-229.6 451.31,-222.2 461.87,-213.29 471.15,-204.92"/>
+<polygon fill="black" stroke="black" points="473.51,-207.5 478.49,-198.15 468.77,-202.35 473.51,-207.5"/>
+</g>
+<!-- TotalCost -->
+<g id="node15" class="node">
+<title>TotalCost</title>
+<path fill="none" stroke="black" d="M674.72,-194C674.72,-194 579.28,-194 579.28,-194 573.28,-194 567.28,-188 567.28,-182 567.28,-182 567.28,-170 567.28,-170 567.28,-164 573.28,-158 579.28,-158 579.28,-158 674.72,-158 674.72,-158 680.72,-158 686.72,-164 686.72,-170 686.72,-170 686.72,-182 686.72,-182 686.72,-188 680.72,-194 674.72,-194"/>
+<text xml:space="preserve" text-anchor="middle" x="627" y="-171.8" font-family="Times,serif" font-size="14.00">Total System Cost</text>
+</g>
+<!-- Solver&#45;&gt;TotalCost -->
+<g id="edge14" class="edge">
+<title>Solver-&gt;TotalCost</title>
+<path fill="none" stroke="black" d="M456.58,-257.67C489.01,-252.49 526.34,-243.88 558,-229.6 573.32,-222.69 588.39,-211.81 600.52,-201.74"/>
+<polygon fill="black" stroke="black" points="602.74,-204.44 608.03,-195.26 598.17,-199.14 602.74,-204.44"/>
+</g>
+<!-- Scenario -->
+<g id="node16" class="node">
+<title>Scenario</title>
+<path fill="none" stroke="black" d="M295.77,-119.2C295.77,-119.2 162.23,-119.2 162.23,-119.2 156.23,-119.2 150.23,-113.2 150.23,-107.2 150.23,-107.2 150.23,-89.6 150.23,-89.6 150.23,-83.6 156.23,-77.6 162.23,-77.6 162.23,-77.6 295.77,-77.6 295.77,-77.6 301.77,-77.6 307.77,-83.6 307.77,-89.6 307.77,-89.6 307.77,-107.2 307.77,-107.2 307.77,-113.2 301.77,-119.2 295.77,-119.2"/>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-102.6" font-family="Times,serif" font-size="14.00">Scenario Comparison</text>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-85.8" font-family="Times,serif" font-size="14.00">(Base / CO2 / EV / V2G)</text>
+</g>
+<!-- Capacity&#45;&gt;Scenario -->
+<g id="edge15" class="edge">
+<title>Capacity-&gt;Scenario</title>
+<path fill="none" stroke="black" d="M116.27,-154.74C135.16,-145.47 157.74,-134.38 177.71,-124.58"/>
+<polygon fill="black" stroke="black" points="179.09,-127.8 186.53,-120.25 176.01,-121.52 179.09,-127.8"/>
+</g>
+<!-- Transmission&#45;&gt;Scenario -->
+<g id="edge16" class="edge">
+<title>Transmission-&gt;Scenario</title>
+<path fill="none" stroke="black" d="M229,-154.74C229,-147.39 229,-138.91 229,-130.83"/>
+<polygon fill="black" stroke="black" points="232.5,-130.97 229,-120.97 225.5,-130.97 232.5,-130.97"/>
+</g>
+<!-- TotalCost&#45;&gt;Scenario -->
+<g id="edge17" class="edge">
+<title>TotalCost-&gt;Scenario</title>
+<path fill="none" stroke="black" d="M588.51,-157.61C578.72,-153.71 568.1,-149.93 558,-147.2 478.85,-125.84 386.26,-113.46 319.5,-106.68"/>
+<polygon fill="black" stroke="black" points="319.98,-103.21 309.69,-105.71 319.29,-110.18 319.98,-103.21"/>
+</g>
+<!-- FinalAnalysis -->
+<g id="node17" class="node">
+<title>FinalAnalysis</title>
+<path fill="none" stroke="black" d="M296.75,-41.6C296.75,-41.6 161.25,-41.6 161.25,-41.6 155.25,-41.6 149.25,-35.6 149.25,-29.6 149.25,-29.6 149.25,-12 149.25,-12 149.25,-6 155.25,0 161.25,0 161.25,0 296.75,0 296.75,0 302.75,0 308.75,-6 308.75,-12 308.75,-12 308.75,-29.6 308.75,-29.6 308.75,-35.6 302.75,-41.6 296.75,-41.6"/>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-25" font-family="Times,serif" font-size="14.00">Final Analysis &amp; Insights</text>
+<text xml:space="preserve" text-anchor="middle" x="229" y="-8.2" font-family="Times,serif" font-size="14.00">(Cost vs Flexibility)</text>
+</g>
+<!-- Scenario&#45;&gt;FinalAnalysis -->
+<g id="edge18" class="edge">
+<title>Scenario-&gt;FinalAnalysis</title>
+<path fill="none" stroke="black" d="M229,-77.14C229,-69.79 229,-61.31 229,-53.23"/>
+<polygon fill="black" stroke="black" points="232.5,-53.37 229,-43.37 225.5,-53.37 232.5,-53.37"/>
+</g>
+</g>
+</svg>
