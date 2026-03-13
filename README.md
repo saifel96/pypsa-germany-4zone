@@ -12,6 +12,12 @@ The model answers: **What is the optimal mix of wind, solar, gas, batteries, and
 
 ---
 
+## Model Architecture
+
+![Model Workflow](workflow_project.svg)
+
+---
+
 ## Features
 
 - 4-zone network model with inter-regional transmission lines
@@ -45,6 +51,7 @@ Two scenarios were compared:
 ```
 FlexGridOptimizer/
 ├── pypsa_model.ipynb          # Main optimization model
+├── workflow_project.svg       # Model architecture diagram
 ├── requirements.txt           # Python dependencies
 ├── germany_4zones.geojson     # Zone geometries for mapping
 ├── data/

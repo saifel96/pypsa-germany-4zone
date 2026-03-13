@@ -1,0 +1,304 @@
+<svg width="1055pt" height="655pt" viewBox="0.00 0.00 1055.00 655.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 651)">
+<title>EnergyModel</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-651 1051,-651 1051,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_data</title>
+<polygon fill="none" stroke="#888888" stroke-dasharray="5,2" points="130,-562.2 130,-639 636,-639 636,-562.2 130,-562.2"/>
+<text xml:space="preserve" text-anchor="middle" x="383" y="-622.4" font-family="Helvetica,sans-Serif" font-size="14.00">Data Layer</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_preprocessing</title>
+<polygon fill="none" stroke="#888888" stroke-dasharray="5,2" points="8,-459.4 8,-536.2 296,-536.2 296,-459.4 8,-459.4"/>
+<text xml:space="preserve" text-anchor="middle" x="152" y="-519.6" font-family="Helvetica,sans-Serif" font-size="14.00">Preprocessing</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_model</title>
+<polygon fill="none" stroke="#888888" stroke-dasharray="5,2" points="196,-225.2 196,-433.4 779,-433.4 779,-225.2 196,-225.2"/>
+<text xml:space="preserve" text-anchor="middle" x="487.5" y="-416.8" font-family="Helvetica,sans-Serif" font-size="14.00">PyPSA Energy System Model</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_gen</title>
+<polygon fill="#eaf3de" stroke="#3b6d11" points="204,-323.8 204,-400.6 370,-400.6 370,-323.8 204,-323.8"/>
+<text xml:space="preserve" text-anchor="middle" x="287" y="-384" font-family="Helvetica,sans-Serif" font-size="14.00">Renewable Generation</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_backup</title>
+<polygon fill="#faece7" stroke="#993c1d" points="378,-323.8 378,-400.6 513,-400.6 513,-323.8 378,-323.8"/>
+<text xml:space="preserve" text-anchor="middle" x="445.5" y="-384" font-family="Helvetica,sans-Serif" font-size="14.00">Backup Generation</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_storage</title>
+<polygon fill="#e6f1fb" stroke="#185fa5" points="521,-323.8 521,-400.6 771,-400.6 771,-323.8 521,-323.8"/>
+<text xml:space="preserve" text-anchor="middle" x="646" y="-384" font-family="Helvetica,sans-Serif" font-size="14.00">Energy Storage</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_opt</title>
+<polygon fill="none" stroke="#888888" stroke-dasharray="5,2" points="666,-110.8 666,-199.2 792,-199.2 792,-110.8 666,-110.8"/>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-182.6" font-family="Helvetica,sans-Serif" font-size="14.00">Optimization</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_results</title>
+<polygon fill="none" stroke="#888888" stroke-dasharray="5,2" points="399,-8 399,-84.8 1039,-84.8 1039,-8 399,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="719" y="-68.2" font-family="Helvetica,sans-Serif" font-size="14.00">Model Outputs</text>
+</g>
+<!-- Weather -->
+<g id="node1" class="node">
+<title>Weather</title>
+<path fill="#e1f5ee" stroke="#0f6e56" d="M353.93,-606.2C353.93,-606.2 294.07,-606.2 294.07,-606.2 288.07,-606.2 282.07,-600.2 282.07,-594.2 282.07,-594.2 282.07,-582.2 282.07,-582.2 282.07,-576.2 288.07,-570.2 294.07,-570.2 294.07,-570.2 353.93,-570.2 353.93,-570.2 359.93,-570.2 365.93,-576.2 365.93,-582.2 365.93,-582.2 365.93,-594.2 365.93,-594.2 365.93,-600.2 359.93,-606.2 353.93,-606.2"/>
+<text xml:space="preserve" text-anchor="middle" x="324" y="-591.5" font-family="Helvetica,sans-Serif" font-size="11.00">Weather Data</text>
+<text xml:space="preserve" text-anchor="middle" x="324" y="-578.3" font-family="Helvetica,sans-Serif" font-size="11.00">ERA5 / atlite</text>
+</g>
+<!-- CF -->
+<g id="node5" class="node">
+<title>CF</title>
+<path fill="#eeedfe" stroke="#534ab7" d="M276.26,-503.4C276.26,-503.4 201.74,-503.4 201.74,-503.4 195.74,-503.4 189.74,-497.4 189.74,-491.4 189.74,-491.4 189.74,-479.4 189.74,-479.4 189.74,-473.4 195.74,-467.4 201.74,-467.4 201.74,-467.4 276.26,-467.4 276.26,-467.4 282.26,-467.4 288.26,-473.4 288.26,-479.4 288.26,-479.4 288.26,-491.4 288.26,-491.4 288.26,-497.4 282.26,-503.4 276.26,-503.4"/>
+<text xml:space="preserve" text-anchor="middle" x="239" y="-488.7" font-family="Helvetica,sans-Serif" font-size="11.00">Capacity Factors</text>
+<text xml:space="preserve" text-anchor="middle" x="239" y="-475.5" font-family="Helvetica,sans-Serif" font-size="11.00">Wind / Solar</text>
+</g>
+<!-- Weather&#45;&gt;CF -->
+<g id="edge1" class="edge">
+<title>Weather-&gt;CF</title>
+<path fill="none" stroke="#666666" d="M295.28,-570.17C295.28,-539.15 295.28,-479 295.28,-479 295.28,-479 294.59,-479 294.59,-479"/>
+<polygon fill="#666666" stroke="#666666" points="299.89,-475.5 289.89,-479 299.89,-482.5 299.89,-475.5"/>
+</g>
+<!-- Load -->
+<g id="node2" class="node">
+<title>Load</title>
+<path fill="#e1f5ee" stroke="#0f6e56" d="M233.85,-606.2C233.85,-606.2 150.15,-606.2 150.15,-606.2 144.15,-606.2 138.15,-600.2 138.15,-594.2 138.15,-594.2 138.15,-582.2 138.15,-582.2 138.15,-576.2 144.15,-570.2 150.15,-570.2 150.15,-570.2 233.85,-570.2 233.85,-570.2 239.85,-570.2 245.85,-576.2 245.85,-582.2 245.85,-582.2 245.85,-594.2 245.85,-594.2 245.85,-600.2 239.85,-606.2 233.85,-606.2"/>
+<text xml:space="preserve" text-anchor="middle" x="192" y="-591.5" font-family="Helvetica,sans-Serif" font-size="11.00">Electricity Demand</text>
+<text xml:space="preserve" text-anchor="middle" x="192" y="-578.3" font-family="Helvetica,sans-Serif" font-size="11.00">ENTSO-E</text>
+</g>
+<!-- Demand -->
+<g id="node6" class="node">
+<title>Demand</title>
+<path fill="#eeedfe" stroke="#534ab7" d="M142.13,-503.4C142.13,-503.4 27.87,-503.4 27.87,-503.4 21.87,-503.4 15.87,-497.4 15.87,-491.4 15.87,-491.4 15.87,-479.4 15.87,-479.4 15.87,-473.4 21.87,-467.4 27.87,-467.4 27.87,-467.4 142.13,-467.4 142.13,-467.4 148.13,-467.4 154.13,-473.4 154.13,-479.4 154.13,-479.4 154.13,-491.4 154.13,-491.4 154.13,-497.4 148.13,-503.4 142.13,-503.4"/>
+<text xml:space="preserve" text-anchor="middle" x="85" y="-488.7" font-family="Helvetica,sans-Serif" font-size="11.00">Regional Demand</text>
+<text xml:space="preserve" text-anchor="middle" x="85" y="-475.5" font-family="Helvetica,sans-Serif" font-size="11.00">Nord · West · Ost · Süd</text>
+</g>
+<!-- Load&#45;&gt;Demand -->
+<g id="edge2" class="edge">
+<title>Load-&gt;Demand</title>
+<path fill="none" stroke="#666666" d="M146.14,-569.82C146.14,-569.82 146.14,-515.13 146.14,-515.13"/>
+<polygon fill="#666666" stroke="#666666" points="149.64,-515.13 146.14,-505.13 142.64,-515.13 149.64,-515.13"/>
+</g>
+<!-- Costs -->
+<g id="node3" class="node">
+<title>Costs</title>
+<path fill="#e1f5ee" stroke="#0f6e56" d="M494.02,-606.2C494.02,-606.2 413.98,-606.2 413.98,-606.2 407.98,-606.2 401.98,-600.2 401.98,-594.2 401.98,-594.2 401.98,-582.2 401.98,-582.2 401.98,-576.2 407.98,-570.2 413.98,-570.2 413.98,-570.2 494.02,-570.2 494.02,-570.2 500.02,-570.2 506.02,-576.2 506.02,-582.2 506.02,-582.2 506.02,-594.2 506.02,-594.2 506.02,-600.2 500.02,-606.2 494.02,-606.2"/>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-591.5" font-family="Helvetica,sans-Serif" font-size="11.00">Technology Costs</text>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-578.3" font-family="Helvetica,sans-Serif" font-size="11.00">CapEx / OpEx</text>
+</g>
+<!-- Wind -->
+<g id="node7" class="node">
+<title>Wind</title>
+<path fill="#c0dd97" stroke="#3b6d11" d="M254,-367.8C254,-367.8 224,-367.8 224,-367.8 218,-367.8 212,-361.8 212,-355.8 212,-355.8 212,-343.8 212,-343.8 212,-337.8 218,-331.8 224,-331.8 224,-331.8 254,-331.8 254,-331.8 260,-331.8 266,-337.8 266,-343.8 266,-343.8 266,-355.8 266,-355.8 266,-361.8 260,-367.8 254,-367.8"/>
+<text xml:space="preserve" text-anchor="middle" x="239" y="-346.5" font-family="Helvetica,sans-Serif" font-size="11.00">Wind</text>
+</g>
+<!-- Costs&#45;&gt;Wind -->
+<g id="edge5" class="edge">
+<title>Costs-&gt;Wind</title>
+<path fill="none" stroke="#666666" d="M406.26,-569.99C406.26,-526.08 406.26,-418 406.26,-418 406.26,-418 248,-418 248,-418 248,-418 248,-379.59 248,-379.59"/>
+<polygon fill="#666666" stroke="#666666" points="251.5,-379.59 248,-369.59 244.5,-379.59 251.5,-379.59"/>
+</g>
+<!-- Solar -->
+<g id="node8" class="node">
+<title>Solar</title>
+<path fill="#c0dd97" stroke="#3b6d11" d="M349.7,-367.8C349.7,-367.8 314.3,-367.8 314.3,-367.8 308.3,-367.8 302.3,-361.8 302.3,-355.8 302.3,-355.8 302.3,-343.8 302.3,-343.8 302.3,-337.8 308.3,-331.8 314.3,-331.8 314.3,-331.8 349.7,-331.8 349.7,-331.8 355.7,-331.8 361.7,-337.8 361.7,-343.8 361.7,-343.8 361.7,-355.8 361.7,-355.8 361.7,-361.8 355.7,-367.8 349.7,-367.8"/>
+<text xml:space="preserve" text-anchor="middle" x="332" y="-346.5" font-family="Helvetica,sans-Serif" font-size="11.00">Solar PV</text>
+</g>
+<!-- Costs&#45;&gt;Solar -->
+<g id="edge6" class="edge">
+<title>Costs-&gt;Solar</title>
+<path fill="none" stroke="#666666" d="M410.55,-569.98C410.55,-515.24 410.55,-356 410.55,-356 410.55,-356 373.66,-356 373.66,-356"/>
+<polygon fill="#666666" stroke="#666666" points="373.66,-352.5 363.66,-356 373.66,-359.5 373.66,-352.5"/>
+</g>
+<!-- OCGT -->
+<g id="node9" class="node">
+<title>OCGT</title>
+<path fill="#f5c4b3" stroke="#993c1d" d="M481.17,-367.8C481.17,-367.8 426.83,-367.8 426.83,-367.8 420.83,-367.8 414.83,-361.8 414.83,-355.8 414.83,-355.8 414.83,-343.8 414.83,-343.8 414.83,-337.8 420.83,-331.8 426.83,-331.8 426.83,-331.8 481.17,-331.8 481.17,-331.8 487.17,-331.8 493.17,-337.8 493.17,-343.8 493.17,-343.8 493.17,-355.8 493.17,-355.8 493.17,-361.8 487.17,-367.8 481.17,-367.8"/>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-346.5" font-family="Helvetica,sans-Serif" font-size="11.00">Gas (OCGT)</text>
+</g>
+<!-- Costs&#45;&gt;OCGT -->
+<g id="edge7" class="edge">
+<title>Costs-&gt;OCGT</title>
+<path fill="none" stroke="#666666" d="M454,-569.89C454,-569.89 454,-379.69 454,-379.69"/>
+<polygon fill="#666666" stroke="#666666" points="457.5,-379.69 454,-369.69 450.5,-379.69 457.5,-379.69"/>
+</g>
+<!-- Battery -->
+<g id="node10" class="node">
+<title>Battery</title>
+<path fill="#b5d4f4" stroke="#185fa5" d="M609.22,-367.8C609.22,-367.8 540.78,-367.8 540.78,-367.8 534.78,-367.8 528.78,-361.8 528.78,-355.8 528.78,-355.8 528.78,-343.8 528.78,-343.8 528.78,-337.8 534.78,-331.8 540.78,-331.8 540.78,-331.8 609.22,-331.8 609.22,-331.8 615.22,-331.8 621.22,-337.8 621.22,-343.8 621.22,-343.8 621.22,-355.8 621.22,-355.8 621.22,-361.8 615.22,-367.8 609.22,-367.8"/>
+<text xml:space="preserve" text-anchor="middle" x="575" y="-353.1" font-family="Helvetica,sans-Serif" font-size="11.00">Battery Storage</text>
+<text xml:space="preserve" text-anchor="middle" x="575" y="-339.9" font-family="Helvetica,sans-Serif" font-size="11.00">4h</text>
+</g>
+<!-- Costs&#45;&gt;Battery -->
+<g id="edge8" class="edge">
+<title>Costs-&gt;Battery</title>
+<path fill="none" stroke="#666666" d="M497.45,-569.98C497.45,-515.24 497.45,-356 497.45,-356 497.45,-356 517.03,-356 517.03,-356"/>
+<polygon fill="#666666" stroke="#666666" points="517.03,-359.5 527.03,-356 517.03,-352.5 517.03,-359.5"/>
+</g>
+<!-- Hydrogen -->
+<g id="node11" class="node">
+<title>Hydrogen</title>
+<path fill="#b5d4f4" stroke="#185fa5" d="M750.64,-367.8C750.64,-367.8 669.36,-367.8 669.36,-367.8 663.36,-367.8 657.36,-361.8 657.36,-355.8 657.36,-355.8 657.36,-343.8 657.36,-343.8 657.36,-337.8 663.36,-331.8 669.36,-331.8 669.36,-331.8 750.64,-331.8 750.64,-331.8 756.64,-331.8 762.64,-337.8 762.64,-343.8 762.64,-343.8 762.64,-355.8 762.64,-355.8 762.64,-361.8 756.64,-367.8 750.64,-367.8"/>
+<text xml:space="preserve" text-anchor="middle" x="710" y="-353.1" font-family="Helvetica,sans-Serif" font-size="11.00">Hydrogen Storage</text>
+<text xml:space="preserve" text-anchor="middle" x="710" y="-339.9" font-family="Helvetica,sans-Serif" font-size="11.00">168h</text>
+</g>
+<!-- Costs&#45;&gt;Hydrogen -->
+<g id="edge9" class="edge">
+<title>Costs-&gt;Hydrogen</title>
+<path fill="none" stroke="#666666" d="M501.74,-569.92C501.74,-541.76 501.74,-491 501.74,-491 501.74,-491 710,-491 710,-491 710,-491 710,-379.77 710,-379.77"/>
+<polygon fill="#666666" stroke="#666666" points="713.5,-379.77 710,-369.77 706.5,-379.77 713.5,-379.77"/>
+</g>
+<!-- CO2 -->
+<g id="node4" class="node">
+<title>CO2</title>
+<path fill="#e1f5ee" stroke="#0f6e56" d="M616.45,-606.2C616.45,-606.2 553.55,-606.2 553.55,-606.2 547.55,-606.2 541.55,-600.2 541.55,-594.2 541.55,-594.2 541.55,-582.2 541.55,-582.2 541.55,-576.2 547.55,-570.2 553.55,-570.2 553.55,-570.2 616.45,-570.2 616.45,-570.2 622.45,-570.2 628.45,-576.2 628.45,-582.2 628.45,-582.2 628.45,-594.2 628.45,-594.2 628.45,-600.2 622.45,-606.2 616.45,-606.2"/>
+<text xml:space="preserve" text-anchor="middle" x="585" y="-591.5" font-family="Helvetica,sans-Serif" font-size="11.00">CO₂ Policy</text>
+<text xml:space="preserve" text-anchor="middle" x="585" y="-578.3" font-family="Helvetica,sans-Serif" font-size="11.00">Emission Limit</text>
+</g>
+<!-- Optimizer -->
+<g id="node13" class="node">
+<title>Optimizer</title>
+<path fill="#fff1cc" stroke="#9c6b00" d="M772.38,-166.4C772.38,-166.4 685.62,-166.4 685.62,-166.4 679.62,-166.4 673.62,-160.4 673.62,-154.4 673.62,-154.4 673.62,-130.8 673.62,-130.8 673.62,-124.8 679.62,-118.8 685.62,-118.8 685.62,-118.8 772.38,-118.8 772.38,-118.8 778.38,-118.8 784.38,-124.8 784.38,-130.8 784.38,-130.8 784.38,-154.4 784.38,-154.4 784.38,-160.4 778.38,-166.4 772.38,-166.4"/>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-152.5" font-family="Helvetica,sans-Serif" font-size="11.00">Linear Optimization</text>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-139.3" font-family="Helvetica,sans-Serif" font-size="11.00">Cost Minimization</text>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-126.1" font-family="Helvetica,sans-Serif" font-size="11.00">(PyPSA + HiGHS)</text>
+</g>
+<!-- CO2&#45;&gt;Optimizer -->
+<g id="edge10" class="edge">
+<title>CO2-&gt;Optimizer</title>
+<path fill="none" stroke="#666666" d="M624.83,-569.95C624.83,-487.87 624.83,-157 624.83,-157 624.83,-157 661.74,-157 661.74,-157"/>
+<polygon fill="#666666" stroke="#666666" points="661.74,-160.5 671.74,-157 661.74,-153.5 661.74,-160.5"/>
+<text xml:space="preserve" text-anchor="middle" x="854.51" y="-347.1" font-family="Helvetica,sans-Serif" font-size="9.00">constraint</text>
+</g>
+<!-- CF&#45;&gt;Wind -->
+<g id="edge3" class="edge">
+<title>CF-&gt;Wind</title>
+<path fill="none" stroke="#666666" d="M230,-467.11C230,-467.11 230,-379.74 230,-379.74"/>
+<polygon fill="#666666" stroke="#666666" points="233.5,-379.74 230,-369.74 226.5,-379.74 233.5,-379.74"/>
+</g>
+<!-- CF&#45;&gt;Solar -->
+<g id="edge4" class="edge">
+<title>CF-&gt;Solar</title>
+<path fill="none" stroke="#666666" d="M277.13,-467.14C277.13,-430.18 277.13,-350 277.13,-350 277.13,-350 290.48,-350 290.48,-350"/>
+<polygon fill="#666666" stroke="#666666" points="290.48,-353.5 300.48,-350 290.48,-346.5 290.48,-353.5"/>
+</g>
+<!-- Network -->
+<g id="node12" class="node">
+<title>Network</title>
+<path fill="#d3d1c7" stroke="#5f5e5a" d="M515.71,-280.8C515.71,-280.8 392.29,-280.8 392.29,-280.8 386.29,-280.8 380.29,-274.8 380.29,-268.8 380.29,-268.8 380.29,-245.2 380.29,-245.2 380.29,-239.2 386.29,-233.2 392.29,-233.2 392.29,-233.2 515.71,-233.2 515.71,-233.2 521.71,-233.2 527.71,-239.2 527.71,-245.2 527.71,-245.2 527.71,-268.8 527.71,-268.8 527.71,-274.8 521.71,-280.8 515.71,-280.8"/>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-266.9" font-family="Helvetica,sans-Serif" font-size="11.00">Transmission Network</text>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-253.7" font-family="Helvetica,sans-Serif" font-size="11.00">380 kV Lines</text>
+<text xml:space="preserve" text-anchor="middle" x="454" y="-240.5" font-family="Helvetica,sans-Serif" font-size="11.00">Nord – West – Ost – Süd</text>
+</g>
+<!-- Demand&#45;&gt;Network -->
+<g id="edge11" class="edge">
+<title>Demand-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M85,-467.24C85,-411.89 85,-249 85,-249 85,-249 368.7,-249 368.7,-249"/>
+<polygon fill="#666666" stroke="#666666" points="368.7,-252.5 378.7,-249 368.7,-245.5 368.7,-252.5"/>
+</g>
+<!-- Wind&#45;&gt;Network -->
+<g id="edge12" class="edge">
+<title>Wind-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M239,-331.4C239,-306.46 239,-265 239,-265 239,-265 368.5,-265 368.5,-265"/>
+<polygon fill="#666666" stroke="#666666" points="368.5,-268.5 378.5,-265 368.5,-261.5 368.5,-268.5"/>
+</g>
+<!-- Solar&#45;&gt;Network -->
+<g id="edge13" class="edge">
+<title>Solar-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M361.91,-344C376.58,-344 391.13,-344 391.13,-344 391.13,-344 391.13,-292.75 391.13,-292.75"/>
+<polygon fill="#666666" stroke="#666666" points="394.63,-292.75 391.13,-282.75 387.63,-292.75 394.63,-292.75"/>
+</g>
+<!-- OCGT&#45;&gt;Network -->
+<g id="edge14" class="edge">
+<title>OCGT-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M454,-331.47C454,-331.47 454,-292.79 454,-292.79"/>
+<polygon fill="#666666" stroke="#666666" points="457.5,-292.79 454,-282.79 450.5,-292.79 457.5,-292.79"/>
+</g>
+<!-- Battery&#45;&gt;Network -->
+<g id="edge15" class="edge">
+<title>Battery-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M528.35,-344C521.59,-344 516.87,-344 516.87,-344 516.87,-344 516.87,-292.75 516.87,-292.75"/>
+<polygon fill="#666666" stroke="#666666" points="520.37,-292.75 516.87,-282.75 513.37,-292.75 520.37,-292.75"/>
+</g>
+<!-- Hydrogen&#45;&gt;Network -->
+<g id="edge16" class="edge">
+<title>Hydrogen-&gt;Network</title>
+<path fill="none" stroke="#666666" d="M664.88,-331.47C664.88,-304.42 664.88,-257 664.88,-257 664.88,-257 539.57,-257 539.57,-257"/>
+<polygon fill="#666666" stroke="#666666" points="539.57,-253.5 529.57,-257 539.57,-260.5 539.57,-253.5"/>
+</g>
+<!-- Network&#45;&gt;Optimizer -->
+<g id="edge17" class="edge">
+<title>Network-&gt;Optimizer</title>
+<path fill="none" stroke="#666666" d="M517.29,-232.86C517.29,-200.48 517.29,-147 517.29,-147 517.29,-147 661.86,-147 661.86,-147"/>
+<polygon fill="#666666" stroke="#666666" points="661.86,-150.5 671.86,-147 661.86,-143.5 661.86,-150.5"/>
+</g>
+<!-- Capacity -->
+<g id="node14" class="node">
+<title>Capacity</title>
+<path fill="#faeeda" stroke="#854f0b" d="M494.88,-52C494.88,-52 419.12,-52 419.12,-52 413.12,-52 407.12,-46 407.12,-40 407.12,-40 407.12,-28 407.12,-28 407.12,-22 413.12,-16 419.12,-16 419.12,-16 494.88,-16 494.88,-16 500.88,-16 506.88,-22 506.88,-28 506.88,-28 506.88,-40 506.88,-40 506.88,-46 500.88,-52 494.88,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="457" y="-37.3" font-family="Helvetica,sans-Serif" font-size="11.00">Optimal Capacity</text>
+<text xml:space="preserve" text-anchor="middle" x="457" y="-24.1" font-family="Helvetica,sans-Serif" font-size="11.00">(GW)</text>
+</g>
+<!-- Optimizer&#45;&gt;Capacity -->
+<g id="edge18" class="edge">
+<title>Optimizer-&gt;Capacity</title>
+<path fill="none" stroke="#666666" d="M673.3,-138C593.72,-138 457,-138 457,-138 457,-138 457,-63.63 457,-63.63"/>
+<polygon fill="#666666" stroke="#666666" points="460.5,-63.63 457,-53.63 453.5,-63.63 460.5,-63.63"/>
+</g>
+<!-- Generation -->
+<g id="node15" class="node">
+<title>Generation</title>
+<path fill="#faeeda" stroke="#854f0b" d="M624.83,-52C624.83,-52 555.17,-52 555.17,-52 549.17,-52 543.17,-46 543.17,-40 543.17,-40 543.17,-28 543.17,-28 543.17,-22 549.17,-16 555.17,-16 555.17,-16 624.83,-16 624.83,-16 630.83,-16 636.83,-22 636.83,-28 636.83,-28 636.83,-40 636.83,-40 636.83,-46 630.83,-52 624.83,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="590" y="-37.3" font-family="Helvetica,sans-Serif" font-size="11.00">Energy Balance</text>
+<text xml:space="preserve" text-anchor="middle" x="590" y="-24.1" font-family="Helvetica,sans-Serif" font-size="11.00">(TWh)</text>
+</g>
+<!-- Optimizer&#45;&gt;Generation -->
+<g id="edge19" class="edge">
+<title>Optimizer-&gt;Generation</title>
+<path fill="none" stroke="#666666" d="M673.23,-128C651.92,-128 632.64,-128 632.64,-128 632.64,-128 632.64,-63.64 632.64,-63.64"/>
+<polygon fill="#666666" stroke="#666666" points="636.14,-63.64 632.64,-53.64 629.14,-63.64 636.14,-63.64"/>
+</g>
+<!-- Flows -->
+<g id="node16" class="node">
+<title>Flows</title>
+<path fill="#faeeda" stroke="#854f0b" d="M773.59,-52C773.59,-52 684.41,-52 684.41,-52 678.41,-52 672.41,-46 672.41,-40 672.41,-40 672.41,-28 672.41,-28 672.41,-22 678.41,-16 684.41,-16 684.41,-16 773.59,-16 773.59,-16 779.59,-16 785.59,-22 785.59,-28 785.59,-28 785.59,-40 785.59,-40 785.59,-46 779.59,-52 773.59,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-37.3" font-family="Helvetica,sans-Serif" font-size="11.00">Transmission Flows</text>
+<text xml:space="preserve" text-anchor="middle" x="729" y="-24.1" font-family="Helvetica,sans-Serif" font-size="11.00">(MW)</text>
+</g>
+<!-- Optimizer&#45;&gt;Flows -->
+<g id="edge20" class="edge">
+<title>Optimizer-&gt;Flows</title>
+<path fill="none" stroke="#666666" d="M729,-118.5C729,-118.5 729,-63.81 729,-63.81"/>
+<polygon fill="#666666" stroke="#666666" points="732.5,-63.81 729,-53.81 725.5,-63.81 732.5,-63.81"/>
+</g>
+<!-- Cost -->
+<g id="node17" class="node">
+<title>Cost</title>
+<path fill="#faeeda" stroke="#854f0b" d="M888.17,-52C888.17,-52 833.83,-52 833.83,-52 827.83,-52 821.83,-46 821.83,-40 821.83,-40 821.83,-28 821.83,-28 821.83,-22 827.83,-16 833.83,-16 833.83,-16 888.17,-16 888.17,-16 894.17,-16 900.17,-22 900.17,-28 900.17,-28 900.17,-40 900.17,-40 900.17,-46 894.17,-52 888.17,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="861" y="-37.3" font-family="Helvetica,sans-Serif" font-size="11.00">System Cost</text>
+<text xml:space="preserve" text-anchor="middle" x="861" y="-24.1" font-family="Helvetica,sans-Serif" font-size="11.00">(bn€/a)</text>
+</g>
+<!-- Optimizer&#45;&gt;Cost -->
+<g id="edge21" class="edge">
+<title>Optimizer-&gt;Cost</title>
+<path fill="none" stroke="#666666" d="M784.6,-135C820.67,-135 861,-135 861,-135 861,-135 861,-63.57 861,-63.57"/>
+<polygon fill="#666666" stroke="#666666" points="864.5,-63.57 861,-53.57 857.5,-63.57 864.5,-63.57"/>
+</g>
+<!-- Emissions -->
+<g id="node18" class="node">
+<title>Emissions</title>
+<path fill="#faeeda" stroke="#854f0b" d="M1019.42,-52C1019.42,-52 948.58,-52 948.58,-52 942.58,-52 936.58,-46 936.58,-40 936.58,-40 936.58,-28 936.58,-28 936.58,-22 942.58,-16 948.58,-16 948.58,-16 1019.42,-16 1019.42,-16 1025.42,-16 1031.42,-22 1031.42,-28 1031.42,-28 1031.42,-40 1031.42,-40 1031.42,-46 1025.42,-52 1019.42,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="984" y="-37.3" font-family="Helvetica,sans-Serif" font-size="11.00">CO₂ Emissions</text>
+<text xml:space="preserve" text-anchor="middle" x="984" y="-24.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Mt/a)</text>
+</g>
+<!-- Optimizer&#45;&gt;Emissions -->
+<g id="edge22" class="edge">
+<title>Optimizer-&gt;Emissions</title>
+<path fill="none" stroke="#666666" d="M784.65,-151C859.68,-151 984,-151 984,-151 984,-151 984,-63.79 984,-63.79"/>
+<polygon fill="#666666" stroke="#666666" points="987.5,-63.79 984,-53.79 980.5,-63.79 987.5,-63.79"/>
+</g>
+</g>
+</svg>
